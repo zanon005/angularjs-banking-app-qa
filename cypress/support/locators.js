@@ -15,10 +15,14 @@ const locators = {
                 CONFIRM: 'form.ng-dirty > .btn'
             },
             TRANSACTION: {
-                BTN: '[ng-class="btnClass1"]'
+                SCOPE: '.marTop',
+                BTN: '[ng-class="btnClass1"]',
             },
             WITHDRAWL: {
-                BTN: '[ng-class="btnClass3"]'
+                SCOPE: '.borderM > .container-fluid > .ng-scope',
+                BTN: '[ng-class="btnClass3"]',
+                VALUE_FORM: '.form-control',
+                CONFIRM: 'form.ng-dirty > .btn'
             }
         }
     },

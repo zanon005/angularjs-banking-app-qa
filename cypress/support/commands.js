@@ -26,7 +26,7 @@
 
 import loc from "./locators";
 
-Cypress.Commands.add('Login', (user, password) => {
+Cypress.Commands.add('Login', (user) => {
     const base_url = "https://www.way2automation.com/angularjs-protractor/banking/"
     cy.visit(base_url+"#/login") // Visit home page
     cy.get(loc.CUSTOMER_LOGIN.BTN_OPEN_LOGIN).click()
