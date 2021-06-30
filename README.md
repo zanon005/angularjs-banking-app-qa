@@ -1,73 +1,51 @@
 # angularjs-banking-app-qa
-Tests developed during my time as an QA Trainee in the AngularJS Banking App at http://www.way2automation.com/angularjs-protractor/
+Project and tests developed during my time as an QA Trainee in the AngularJS Banking App at http://www.way2automation.com/angularjs-protractor/
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
 ### Prerequisites
-What things you need to install the software and how to install them
+Librarys and modules used in this project.
 
-```
-Node.js
-npm
-Cypress
-```
+1. NodeJS v14.x.x - https://nodejs.org/en/
+2. npm v6.x.x  - Should come with NodeJS
+3. Cypress v7.6.0 - See instalation guide bellow
 
 ### Installing
+A step by step series of examples that tell you have to get a development env running.
+1. Clone the project to your machine.
+2. Download and install NodeJS indicated in the prerequisites.
+3. Install Cpyress by running this commands:
+    ```
+    cd angularjs-banking-app-qa/
+    npm install cypress@7.6.0
+    ```
 
-A step by step series of examples that tell you have to get a development env running
+## Running the project and tests
+After installing all modules required you can run the project and all tests via cypress.
+1. To do that, first make sure to be in the projects main folder.
+    ```
+    cd angularjs-banking-app-qa/
+    ```
+2. Then, run the project with: 
+    ```
+    npm run cypress:open
+    ```
+    or with: 
+    ```
+    ./node_modules/.bin/cypress open
+    ```
+3. The project will open by default using Google Chrome.
 
-Say what the step will be
-
+The tests are located in the file: 
 ```
-1 - 
+./integration/BankingApp/functional.spec.js 
 ```
-
-```
-2 - 
-
-```
-
-```
-3 - 
-```
-
-```
-4 - 
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-```
-1 - 
-npm run cypress:open
-```
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
+Select the functional.spec.js file in the cypress application and the tests will start to run.
 
 ## Built With
 
-* [Rest Assured](https://rest-assured.io/) - Testing and validating REST services in Java
-* [Maven](https://maven.apache.org/) - Dependency Management
-
+* [Cypress](https://www.cypress.io/) - Testing and validating
 
 ## Authors
 
